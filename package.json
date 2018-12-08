@@ -1,0 +1,42 @@
+{
+  "name": "clientsite",
+  "version": "1.0.0",
+  "description": "potential client site - demo eng interview",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimMartin4321/clientSite.git"
+  },
+  "keywords": [
+    "demo",
+    "talkdesk"
+  ],
+  "author": "Jim Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimMartin4321/clientSite/issues"
+  },
+  "homepage": "https://github.com/jimMartin4321/clientSite#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
