@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaAngleDown } from 'react-icons/fa';
 
 const Header = () => (
   <div className="header">
@@ -6,7 +7,8 @@ const Header = () => (
       FLEXPORT
     </div>
     <div className="country">
-      <img src={'https://c2.staticflickr.com/2/1041/685843379_3c0b91102e_t.jpg'} />
+      <img id="thumbnail" src={'/americanFlagThumbnail.jpg'} />
+      <FaAngleDown className="angleDown" />
     </div>
   </div>
 );
