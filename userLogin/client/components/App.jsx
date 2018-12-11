@@ -4,8 +4,7 @@ import CompanyDomainForm from './CompanyDomainForm';
 
 const App = () => (
   <div>
-    <Header />
-    <CompanyDomainForm />
+    in user login
   </div>
 );
 

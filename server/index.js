@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 const port = 3004;
 const public_companyLogIn_src = path.join(__dirname, '../companyLogIn/public');
+const public_userLogIn_src = path.join(__dirname, '../userLogIn/public');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/users/sign_in', express.static(public_companyLogIn_src));
+app.use('/login',express.static(public_userLogIn_src));
 
 app.listen(port, (err) => {
   if (err){
