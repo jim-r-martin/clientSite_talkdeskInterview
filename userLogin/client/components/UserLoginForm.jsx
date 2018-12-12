@@ -9,7 +9,7 @@ const UserLoginForm = () => (
     <div className="label">
       Password
     </div>
-    <input type="text" default="password" />
+    <input type="password" default="password" />
     <a className="loginButton" href="/help"><button type="button" >Login</button></a>
   </div>
 )
