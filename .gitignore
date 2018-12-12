@@ -62,3 +62,6 @@ typings/
 
 # do not want to upload the bundle
 *bundle.js
+
+# do not want ds store files
+*.DS_Store

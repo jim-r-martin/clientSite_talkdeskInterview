@@ -1,0 +1,57 @@
+.header {
+  margin-top: 50px;
+}
+
+body {
+  background-color: rgb(242, 244, 245);
+}
+
+.title {
+  margin: 0 auto;
+  width: 180px;
+  height: 70px;
+  background-image: url(https://prd-cdn-talkdesk.talkdesk.com/main-ui/v1.15.3/assets/resources/td-logo-dark.svg);
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+
+.formContainer {
+  margin: auto 30%;
+  background-color: white;
+}
+
+.containerContent {
+  padding: 0 5%;
+  font-family: talkDeskForm;
+  font-size: 0.75em;
+}
+
+.domainInput {
+  padding-top: 1%;
+  padding-bottom: 2%; 
+}
+
+.domainSubmitButton {
+  display: block;
+}
+
+.domainSignIn {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 1.6;
+
+}
+
+.demoRequest {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+label {
+  display: block;
+}
+
+@font-face {
+  font-family: talkDeskForm;
+  src: url(hvLE.woff);
+}
