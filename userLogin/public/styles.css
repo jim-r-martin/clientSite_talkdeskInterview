@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(242, 244, 245);
+  background-color: white;
   height: 100vh;
 }
 
@@ -25,6 +25,10 @@ body {
   grid-column: 1 / span 1;
 }
 
+.loginWrapper {
+  margin: auto 13.5%;
+}
+
 .marketingPhoto {
   grid-column: 2 / span 1;
   background-image: url(https://prd-cdn-talkdesk.talkdesk.com/talkdesk-id-assets/v1.3.3/marketing/opentalk18.jpg);
@@ -34,6 +38,10 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+}
+
+.userLoginForm {
+  text-align: center;
 }
 
 .title {
