@@ -1,13 +1,14 @@
 import React from 'react';
-import { FaAngleDown } from 'react-icons/fa';
+import talkDeskLogo from '../../public/talk_desk_logo.png';
 
 const Header = () => (
   <div className="header">
-    <div className="title">
+    <div className="innerBorder">
+      <img src={talkDeskLogo} />
     </div>
-    <div className="loginInfo">
-      Enter your credentials to login
-    </div>
+    <h2 className="callToAction">
+      How can we <strong>Help</strong>?
+    </h2>
   </div>
 );
 

@@ -1,11 +1,13 @@
 import React from 'react';
+import RequestForm from './RequestForm';
 import Header from './Header';
 import UserLoginForm from './UserLoginForm';
-import photo from '../../public/talkdeskMarketingPhoto.png';
+
 
 const App = () => (
-  <div>
-    How can we help?
+  <div className="root">
+    <Header />
+    <RequestForm />
   </div>
   // <div className="wrapper">
   //   <div className="loginBody">

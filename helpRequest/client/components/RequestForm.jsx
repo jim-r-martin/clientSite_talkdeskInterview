@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CompanyDomainForm = (props) => {
+const RequestForm = (props) => {
 
   return (
     <div className="formContainer">
@@ -23,4 +23,4 @@ const CompanyDomainForm = (props) => {
   );
 }
 
-export default CompanyDomainForm;
+export default RequestForm;

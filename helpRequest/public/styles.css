@@ -1,3 +1,38 @@
+body {
+  height: 100vh;
+  width: 100vh;
+}
+
+#App {
+  height: 100%;
+  width: 100%;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: rgb(23, 34, 64);
+  height: 40%;
+  color: #fff;
+}
+
+.callToAction {
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.innerBorder {
+  border-bottom: 1px solid #fff;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Old Styling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* 
 .header {
   margin-top: 50px;
 }
@@ -96,4 +131,4 @@ label {
 @font-face {
   font-family: talkDeskForm;
   src: url(hvLE.woff);
-}
+} */
