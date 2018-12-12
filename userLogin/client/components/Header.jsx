@@ -5,6 +5,9 @@ const Header = () => (
   <div className="header">
     <div className="title">
     </div>
+    <div className="loginInfo">
+      Enter your credentials to login
+    </div>
   </div>
 );
 

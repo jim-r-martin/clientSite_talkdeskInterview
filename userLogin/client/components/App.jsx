@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from './Header';
-import CompanyDomainForm from './CompanyDomainForm';
+import photo from '../../public/talkdeskMarketingPhoto.png';
 
 const App = () => (
-  <div>
-    in user login
+  <div className="wrapper">
+    <div className="loginBody">
+      <Header />
+    </div>
+    <div className="marketingPhoto">
+    </div>
   </div>
 );
 

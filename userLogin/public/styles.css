@@ -4,15 +4,49 @@
 
 body {
   background-color: rgb(242, 244, 245);
+  height: 100vh;
+}
+
+#App {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loginBody {
+  grid-column: 1 / span 1;
+}
+
+.marketingPhoto {
+  grid-column: 2 / span 1;
+  background-image: url(https://prd-cdn-talkdesk.talkdesk.com/talkdesk-id-assets/v1.3.3/marketing/opentalk18.jpg);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 .title {
-  margin: 0 auto;
+  margin: 0 15%;
   width: 180px;
   height: 70px;
   background-image: url(https://prd-cdn-talkdesk.talkdesk.com/main-ui/v1.15.3/assets/resources/td-logo-dark.svg);
   background-size: 180px;
   background-repeat: no-repeat;
+}
+
+.loginInfo {
+  display: block;
 }
 
 .formContainer {

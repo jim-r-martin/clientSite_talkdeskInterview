@@ -13,6 +13,12 @@ module.exports = {
           presets: ['@babel/preset-env','@babel/preset-react'],
         },
       },
+    },
+    {
+      test: /\.png$/,
+      use: {
+        loader: 'url-loader',
+      },
     }]
   },
   resolve: {
@@ -22,4 +28,5 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
   },
+  watch: true,
 };
