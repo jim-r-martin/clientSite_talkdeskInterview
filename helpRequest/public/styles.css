@@ -1,0 +1,99 @@
+.header {
+  margin-top: 50px;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+#App {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loginBody {
+  grid-column: 1 / span 1;
+}
+
+.loginWrapper {
+  margin: auto 13.5%;
+}
+
+.marketingPhoto {
+  grid-column: 2 / span 1;
+  background-image: url(https://prd-cdn-talkdesk.talkdesk.com/talkdesk-id-assets/v1.3.3/marketing/opentalk18.jpg);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.userLoginForm {
+  text-align: center;
+}
+
+.title {
+  margin: 0 15%;
+  width: 180px;
+  height: 70px;
+  background-image: url(https://prd-cdn-talkdesk.talkdesk.com/main-ui/v1.15.3/assets/resources/td-logo-dark.svg);
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+
+.loginInfo {
+  display: block;
+}
+
+.formContainer {
+  margin: auto 30%;
+  background-color: white;
+}
+
+.containerContent {
+  padding: 0 5%;
+  font-family: talkDeskForm;
+  font-size: 0.75em;
+}
+
+.domainInput {
+  padding-top: 1%;
+  padding-bottom: 2%; 
+}
+
+.domainSubmitButton {
+  display: block;
+}
+
+.domainSignIn {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 1.6;
+
+}
+
+.demoRequest {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+label {
+  display: block;
+}
+
+@font-face {
+  font-family: talkDeskForm;
+  src: url(hvLE.woff);
+}
