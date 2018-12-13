@@ -1,23 +1,17 @@
 import React from 'react';
+import InputFieldTemplate from './InputFieldTemplate';
+// import PhoneNumberSelect from './PhoneNumberSelect';
 
 const RequestForm = (props) => {
 
   return (
-    <div className="formContainer">
-      <div className="containerContent domainInput">
-        <label>
-          Your Account Name
-        </label>
-        <input type="text" className="companyDomain"></input>
-        <span className="talkdeskdomain">.mytalkdesk.com</span>
-      </div>
-      <div className="containerContent domainSignIn">
-        Log into your Talkdesk account using your company's subdomain (example: yourcompany.mytalkdesk.com).
-        If you don't remember the subdomain send us an email.
-        <button className="domainSubmitButton">Login</button>
-      </div>
-      <div className="containerContent demoRequest">
-        Not a Talkdesk customer? Request a demo.
+    <div className="requestForm">
+      <div className="formTitle"><h3>Submit a request</h3></div>
+      <div className="formContainer">
+        {/* <PhoneNumberSelect /> */}
+        <InputFieldTemplate label={'PhoneNumber'} className={'phoneNumber'} />
+        <InputFieldTemplate label={'Subject'} className={'subject'} />
+        <InputFieldTemplate label={'Description'} className={'description'} />
       </div>
     </div>
   );

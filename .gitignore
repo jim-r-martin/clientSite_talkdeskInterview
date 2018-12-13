@@ -65,3 +65,6 @@ typings/
 
 # do not want ds store files
 *.DS_Store
+
+# ignore talkdesk configuration details
+*keys.js
