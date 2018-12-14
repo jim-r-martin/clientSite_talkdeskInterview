@@ -12,6 +12,7 @@ const RequestForm = (props) => {
         <InputFieldTemplate label={'PhoneNumber'} className={'phoneNumber'} />
         <InputFieldTemplate label={'Subject'} className={'subject'} />
         <InputFieldTemplate label={'Description'} className={'description'} />
+        <button>Submit</button>
       </div>
     </div>
   );
