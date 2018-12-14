@@ -8,16 +8,6 @@ const App = () => (
     <Header />
     <RequestForm />
   </div>
-  // <div className="wrapper">
-  //   <div className="loginBody">
-  //     <div className="loginWrapper">
-  //       <Header />
-  //       <UserLoginForm />
-  //     </div>
-  //   </div>
-  //   <div className="marketingPhoto">
-  //   </div>
-  // </div>
 );
 
 export default App;
