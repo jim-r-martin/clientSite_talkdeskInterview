@@ -1,6 +1,7 @@
 import React from 'react';
 import RequestForm from './RequestForm';
 import Header from './Header';
+import { phoneValidator, validator} from './validator.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,7 +25,17 @@ class App extends React.Component {
   }
 
   onSubmit() {
-    console.log(this.state);
+    const { state } = this;
+    const phoneNumber = phoneValidator(state.phone);
+    console.log(phoneNumber);
+    if (!validator(state)) {
+      alert('Invalid inputs please try again');
+    } else if (!phoneNumber) {
+      alert('invalid phone number');
+    } else {
+      console.log(phoneNumber);
+    }
+    console.log(state);
   }
 
   render() {
