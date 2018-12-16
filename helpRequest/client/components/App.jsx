@@ -2,6 +2,7 @@ import React from 'react';
 import RequestForm from './RequestForm';
 import Header from './Header';
 import { phoneValidator, validator} from './validator.jsx';
+import postData from './postData';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class App extends React.Component {
       phone: '+1',
       subject: '',
       description: '',
+      callbackAccepted: false,
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -27,15 +29,24 @@ class App extends React.Component {
   onSubmit() {
     const { state } = this;
     const phoneNumber = phoneValidator(state.phone);
-    console.log(phoneNumber);
     if (!validator(state)) {
       alert('Invalid inputs please try again');
     } else if (!phoneNumber) {
       alert('invalid phone number');
     } else {
-      console.log(phoneNumber);
+      state.phone = phoneNumber;
+      postData(state)
+      .then((res) => {
+        const { status } = res;
+        if (res !== 200) {
+          return alert(`Oops! Something went wrong, our apologies. Please try again. Error: ${err}`);
+        }
+        this.setState({ callbackAccepted: true });
+      })
+      .catch((err) => {
+        alert(`Oops! Something went wrong, our apologies. Please try again. Error: ${err}`);
+      });
     }
-    console.log(state);
   }
 
   render() {
