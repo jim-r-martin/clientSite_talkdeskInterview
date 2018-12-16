@@ -10,8 +10,6 @@ class App extends React.Component {
     this.state = {
       name: '',
       phone: '+1',
-      subject: '',
-      description: '',
       callbackAccepted: false,
     };
     this.onChange = this.onChange.bind(this);
@@ -38,8 +36,8 @@ class App extends React.Component {
       postData(state)
       .then((res) => {
         const { status } = res;
-        if (res !== 200) {
-          return alert(`Oops! Something went wrong, our apologies. Please try again. Error: ${err}`);
+        if (status !== 200) {
+          return alert(`Oops! Something went wrong, our apologies. Please try again. Error: ${res.error}`);
         }
         this.setState({ callbackAccepted: true });
       })

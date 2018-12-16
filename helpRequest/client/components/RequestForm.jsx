@@ -9,8 +9,6 @@ const RequestForm = (props) => {
       <div className="formContainer">
         <InputFieldTemplate label={'Name'} className={'name'} onChange={onChange} />
         <InputFieldTemplate label={'Phone Number'} className={'phone'} onChange={onChange} />
-        <InputFieldTemplate label={'Subject'} className={'subject'} onChange={onChange} />
-        <InputFieldTemplate label={'Description'} className={'description'} onChange={onChange} />
         <button type="button" onClick={onSubmit}>Submit</button>
       </div>
     </div>
