@@ -1,6 +1,7 @@
 import React from 'react';
 import RequestForm from './RequestForm';
 import Header from './Header';
+import SuccessPage from './SuccessPage';
 import { phoneValidator, validator} from './validator.jsx';
 import postData from './postData';
 
@@ -48,6 +49,15 @@ class App extends React.Component {
   }
 
   render() {
+    const { callbackAccepted } = this.state;
+    if (callbackAccepted) {
+      return (
+        <div className="root">
+          <Header />
+          <SuccessPage />
+        </div>
+      );
+    }
     return (
     <div className="root">
       <Header />

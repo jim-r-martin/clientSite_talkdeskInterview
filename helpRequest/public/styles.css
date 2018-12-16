@@ -37,7 +37,7 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.requestForm {
+.main {
   margin: auto 40% auto 20%;
 }
 
@@ -47,6 +47,37 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
+.requestInput {
+  margin: 2%;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #555555;
+}
+
+.formContainer button {
+  margin: 0 2% 1% 2%;
+  background: #444;
+  border-color: transparent;
+  box-shadow: inset 0 -2px #222;
+  color: #FFF;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.successMessage {
+  margin: 10% 0;
+  padding: 5%;
+  background-color: #1D3557;
+  color: #F1FAEE;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  height: 30%;
+}
+
 label {
   display: block;
+}
+
+input {
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.11);
 }
