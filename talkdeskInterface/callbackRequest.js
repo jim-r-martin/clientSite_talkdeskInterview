@@ -2,29 +2,26 @@ const request = require('request');
 const tokenGeneration = require('./tokenGeneration');
 
 const callbackRequest = (callInfo, res) => {
-  const { contact_phone_number } = callInfo;
   const url = 'https://api.talkdeskapp.com/calls/callback';
   const talkdesk_phone_number = '+14155786136';
+  const contact_phone_number = '+1'.concat(callInfo.phone);
 
   const callbackApiCall = (Access_Token) => {
     const options = {
       json: true,
       auth: { 'bearer': Access_Token },
-      body: { talkdesk_phone_number, contact_phone_number },
+      body: { talkdesk_phone_number, contact_phone_number }
     };
     request.post(url, options, (err, httpResponse, body) => {
       if (err) {
-        return console.log(err);
+        return res.sendStatus(400).end();
       }
+      console.log(body);
+      res.sendStatus(200).end();
     });
   };
+
   tokenGeneration(callbackApiCall);
 };
-
-const info = {
-  contact_phone_number: '+15622301815',
-};
-
-callbackRequest(info, null);
 
 module.exports = callbackRequest;
