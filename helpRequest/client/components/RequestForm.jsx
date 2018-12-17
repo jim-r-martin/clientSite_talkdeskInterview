@@ -4,7 +4,7 @@ import InputFieldTemplate from './InputFieldTemplate';
 const RequestForm = (props) => {
   const { onChange, onSubmit } = props;
   return (
-    <div className="requestForm">
+    <div className="main requestForm">
       <div className="formTitle"><h3>Submit a request</h3></div>
       <div className="formContainer">
         <InputFieldTemplate label={'Name'} className={'name'} onChange={onChange} />

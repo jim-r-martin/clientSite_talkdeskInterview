@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const request = require('request');
 const cbApiCall = require('../talkdeskInterface/callbackRequest');
 
 const app = express();
@@ -27,6 +28,5 @@ app.listen(port, (err) => {
 });
 
 app.post('/callback', (req, res) => {
-  console.log(req.body);
   cbApiCall(req.body, res);
 });

@@ -1,5 +1,5 @@
 const postData = (dataObj) => {
-  const url = 'http://localhost:3004/callback';
+  const url = 'http://ec2-18-191-92-21.us-east-2.compute.amazonaws.com/callback';
   const options = {
     method: 'POST',
     headers: {

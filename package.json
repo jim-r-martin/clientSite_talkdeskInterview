@@ -8,7 +8,8 @@
     "start": "nodemon server/index.js",
     "react-companyLogIn-dev": "webpack --watch --config ./companyLogIn/webpack.config.js",
     "react-userLogIn-dev": "webpack --watch --config ./userLogIn/webpack.config.js",
-    "react-helpRequest-dev": "webpack --watch --config ./helpRequest/webpack.config.js"
+    "react-helpRequest-dev": "webpack --watch --config ./helpRequest/webpack.config.js",
+    "react-helpRequest-prod": "webpack --config ./helpRequest/webpack.prod.js"
   },
   "repository": {
     "type": "git",
